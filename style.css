@@ -1,0 +1,206 @@
+/* Global Styles */
+img {
+    width: 10vh;
+    color: white;
+}
+
+.profile-img {
+    width: 2vh;
+}
+
+.default-image-size {
+    width: 100px;
+    height: auto;
+
+}
+
+/* Dark Backgrounds for Different Sections */
+.topPage, .div2, .readBlog, .div3 {
+    background-color: #121212; /* Darker background */
+}
+
+/* Top page styling */
+.topPage {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* General text styling for <p> and <h1> */
+p, h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 0 20px;
+}
+h1{
+    margin: 0px;
+    padding: 12px;
+}
+
+/* Button Styling */
+.button {
+    border: solid;
+    border-radius: 4px;
+    border-color: #333; /* Dark border color */
+    padding: 5px;
+    margin: 3px;
+    color: white;
+    background-image: linear-gradient(to right, #333, #666); /* Dark gradient */
+    cursor: pointer;
+}
+
+.button:hover {
+    background-image: linear-gradient(to right, #666, #333); /* Hover effect */
+}
+
+/* Flexbox Layout for Div2 (Intro Text + Card Container) */
+.div2 {
+    display: flex; /* Flexbox to align intro text next to cards */
+    gap: 20px; /* Space between the intro text and cards */
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+/* Styling for Intro Text */
+.intro-text {
+    flex: 1; /* Take up available space */
+}
+
+.intro-text h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.intro-text .button {
+    margin-top: 20px;
+}
+
+/* Card Container (For AI Solutions) */
+.card-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: flex-start; /* Align cards to the left */
+    flex-wrap: wrap; /* Allow cards to wrap if they overflow */
+}
+
+/* Individual Card Styling */
+.card {
+    background-color: #1f1f1f; /* Dark card background */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 30%; /* Adjust width to ensure cards fit */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.card img {
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Link Styling */
+.link {
+    color: #00b0ff; /* Accent color */
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Flex Layout for Div3 (Bottom Page Cards) */
+.div3 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Bottom Page Cards */
+.card.bottom-page {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 45%; /* Adjust width to control the layout */
+}
+
+.card.bottom-page h1 {
+    font-size: 20px;
+}
+
+.card.bottom-page p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card.bottom-page .button {
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #121212; /* Dark footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Top page styling */
+.topPage {
+    display: flex;
+    justify-content: space-between; /* Space out the elements */
+    align-items: center; /* Vertically center items */
+    padding: 20px; /* Add some padding */
+}
+
+/* Styling for Logo */
+.topPage img {
+    width: 120px; /* Adjust the logo size */
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    gap: 20px; /* Space out the nav items */
+}
+
+nav p {
+    margin: 0; /* Remove default margins from <p> tags */
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Styling for User Icons */
+.user-icons {
+    display: flex;
+    gap: 10px; /* Space between icons */
+}
+
+.user-icons img {
+    width: 25px; /* Adjust icon size */
+    height: auto;
+    cursor: pointer;
+}
+
