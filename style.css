@@ -59,13 +59,17 @@ h1 {
     gap: 20px; /* Space between the intro text and cards */
     padding: 20px;
     text-align: left; /* Align text to the left */
-    align-items: flex-start; /* Ensure both sections align at the top */
+    align-items: stretch; /* Stretch both intro text and cards to same height */
 }
 
 /* Styling for Intro Text */
 .intro-text {
-    flex: 1; /* Take up available space */
-    max-width: 50%; /* Make sure text doesn't take too much space */
+    flex: 1 1 45%; /* Allows intro text to take up to 45% of the space */
+    max-width: 600px; /* Set a max width for better readability */
+    width: 100%; /* Make sure it can take the full available width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure the content is spaced properly */
 }
 
 .intro-text h1 {
@@ -88,49 +92,58 @@ h1 {
     gap: 20px;
     padding: 20px;
     justify-content: flex-start; /* Align cards to the left */
-    flex-wrap: wrap-reverse; /* Allow cards to wrap if they overflow */
-    flex-grow: 1; /* Allow cards to expand and take available space */
+    flex-wrap: wrap; /* Allow cards to wrap if necessary */
+    flex-grow: 1; /* Allow card container to take the remaining space */
 }
+
 
 /* Individual Card Styling */
-.card {
-    background-color: #1f1f1f; /* Dark card background */
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    width: 30%; /* Adjust width to ensure cards fit */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card img {
-    width: 40%;
-    margin-bottom: 10px;
-}
-
-.card h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-/* Link Styling */
-.link {
-    color: #00b0ff; /* Accent color */
-    text-decoration: none;
-}
-
-.link:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
+    .card {
+        background-color: #1f1f1f; /* Dark card background */
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        width: 30%; /* Adjust width to ensure cards fit */
+        box-sizing: border-box; /* Ensure padding doesn't affect width */
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: flex-start; /* Align elements from top */
+    }
+    
+    /* Style the image inside the card */
+    .card img {
+        width: 40%;
+        margin-bottom: 10px;
+        align-self: center; /* Center the image horizontally */
+    }
+    
+    /* Style the title (h3) to be near the image */
+    .card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 10px; /* Add some space from the image */
+        text-align: center; /* Center the title */
+    }
+    
+    /* Style the description text (p) */
+    .card p {
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: center; /* Center the text */
+    }
+    
+    /* Link Styling */
+    .link {
+        color: #00b0ff; /* Accent color */
+        text-decoration: none;
+    }
+    
+    .link:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
 
 /* Flex Layout for Div3 (Bottom Page Cards) */
 .div3 {
